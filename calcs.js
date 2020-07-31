@@ -26,16 +26,25 @@
 // var lastName = "Kramer";
 // var favoriteCareer = "software developer"
 // console.log('Hi, my name is ' + firstName + ' ' + lastName + '.' + ' I aspire to be a ' + favoriteCareer + ', whether its video games or other software, being able to work with technology is my dream.');   
+// //-----------------------------------------------------------------------------------------------
 var firstName = "Kevin "
 var lastName = "Kramer"
 var fullName = firstName.concat(lastName)
 console.log(fullName)
-for(i = 1; i<=100; i++){
-    if(i%3==0){
-        console.log('Buzz')
+console.log(fullName.length)
+for(i = 1; i<=30; i++){
+    if(i % 5 == 0 && i % 3 == 0){
+        console.log('FizzBuzz')
         }
+    else if(i % 3 == 0){
+        console.log('Fizz')
+        }
+    else if(i % 5 == 0){
+        console.log('Buzz')
+    }
     else{
         console.log(i)
     }
     
 } 
+
