@@ -59,9 +59,16 @@ myPenguin.fly = function(){
 console.log(myPenguin.fly());
 myPenguin.canFly = true
 console.log(myPenguin.fly());
+function printKeys(x){
+    var keys = Object.keys(x)
+    for(i = 0; i < keys.length; i++){
+        console.log(keys[i]);
+    }
+};
+console.log(printKeys(myPenguin));
 var text = "", x
-for(x in myPenguin){
-    text += myPenguin[x] + " "
+for(property in myPenguin){
+    text += myPenguin[property] + " "
 }
-console.log(text)
+console.log(text);
 
